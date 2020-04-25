@@ -76,13 +76,13 @@ cd birbs
 open .
 ```
 
-open `birdcam.py` file 
+in the `birdcam.py` file 
 change password to your password
 
 ```python
 camera = GoProHero(password='password')
 ```
-then choose when you want your camera to turn on and record.
+decide **when** you want your camera to turn on and record.
 
 the current version is set to turn on at 05:30 and record for 2 hours
 ```python
@@ -100,16 +100,19 @@ schedule.every().wednesday.at("13:15").do(job)
 schedule.every().minute.at(":17").do(job)
 ```
 
-to choose for how long you would like to record edit :
-⋅⋅⋅[hours to seconds converter](https:(//www.calculateme.com/time/hours/to-seconds/)
-⋅⋅⋅[morning civil twilight calculator](https://www.suntoday.org/sunrise-sunset/tomorrow.html)
-⋅⋅⋅ *birbs feed early in the morning*
+finally choose for how long you would like to record :
+
+[hours to seconds converter](https:(//www.calculateme.com/time/hours/to-seconds/)
+
+[morning civil twilight calculator](https://www.suntoday.org/sunrise-sunset/tomorrow.html)
+
+*birbs feed early in the morning*
 
 ```python
     camera.command('record', 'on')
     time.sleep(time you want to record in seconds)
-    camera.command('record', 'off')
-    ```
+    camera.command('record', 'off') ```   
+
 save everything!
 
 in the terminal
@@ -118,6 +121,7 @@ in the terminal
 cd to ~/your/path/birbs
 python3 birdcam.py
 ```
+
 When running `birdcam.py` came sure you have turned on the wifi on on your camera and joined the camera network
 
 ###### **❐ WOOHOO CHECKPOINT ❐** YOU CAN NOW SEE THE BIRBS YOU MISSED WHEN YOU WERE ASLEEP
