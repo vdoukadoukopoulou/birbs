@@ -141,15 +141,15 @@ When running `birdcam.py` make sure you have turned on the wifi on your camera a
 
 
 ##### HARDWARE NOTES
-the device running `birdcam.py` needs to be on and connected to the GoPro camera network in order to execute the steps.
-GoPro Hero 3+ (black edition) needs to be plugged in to electric power to last .That means that the bacpac is fitted (the internal battery can't be removed and still have the gopro operational) the charging cable needs to be 5V,1A (be aware most charging cables are 2A)
-it overheats.
+the device running `birdcam.py` needs to be on and connected to the GoPro camera network in order to execute the steps for the whole duration.
+GoPro Hero 3+ (black edition) needs to be plugged in to additional power to last. For now I use sock power, that means that the bacpac is fitted (the internal battery can't be removed and still have the gopro 3+ black edition operational, it seems possible on the silver edition though) the charging cable needs to be 5V:1A (be aware most charging cables are 2A). 
+It overheats (without excessive testing) it looks like it heats slightly less when using the GoPro Original internal battery and the GoPro Charging Cable.
 
 At `1080p` 2 hours are something less that `32GB`
 
 ##### NEXT STEPS
 1. Get the program on a rasberry pi so it can run uninterrupted and won't require the laptop to stay on
 2. Offload the files remotely, so you don't to remove the camera to access the SD
-3. Monitor the heatup of the GoPro (when recording in shadow, when recording in heat, when asleep in the sun etc.)
-4. Explore ways of powering the GoPro without the internal battery.
+3. Monitor the heatup of the GoPro (when recording in shadow, when recording in heat, when asleep in the sun etc.) Possibly looking into a Aluminum Heat Sink Case.
+4. Explore ways of powering the GoPro without the internal battery (such battery eliminator etc.)
 5. Look into setuping a livestream
