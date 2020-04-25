@@ -20,6 +20,7 @@ a collection of python libaries, scripts and notes used in automating the proces
 #### REMOTE CONTROL OF THE GOPRO 
 `avoid having to press buttons`
 
+
 [install latest version of python](https://www.python.org/downloads/)
 
 latest version of python includes the pip command
@@ -55,7 +56,6 @@ camera.command('record', 'off')
 ###### **❐ WOOHOO CHECKPOINT ❐** YOU HAVE JUST RECORDED YOUR BIRBS REMOTELY
 
 
-
 most used commands :
 
 Parameter | Values
@@ -63,17 +63,14 @@ Parameter | Values
 power | `sleep`, `on`
 record | `off`, `on`
 
-Check out the [API](https://github.com/joshvillbrandt/goprohero/blob/master/docs/API.md) for the complete command list with more set up options.
-
+Check out the [API](https://github.com/joshvillbrandt/goprohero/blob/master/docs/API.md) for the complete command and parameter list.
 
   
 #### AUTOMATE TURN ON & RECORD 
-`Make this into a program that happens every morning because the birbs wake up before you`
-
+`so it happens every morning because the birbs wake up before you`
 
 
 This part uses [shedule](https://pypi.org/project/schedule/).An in-process scheduler for periodic jobs that uses the builder pattern for configuration.
-
 
 
 ```bash
@@ -124,7 +121,9 @@ time.sleep(time you want to record in seconds)
 camera.command('record', 'off')
 ```   
 
+
 **save everything!**
+
 
 in the terminal
 
