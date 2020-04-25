@@ -22,7 +22,7 @@ a collection of python libaries, scripts and notes used in automating the proces
 
 [install latest version of python](https://www.python.org/downloads/)
 
-latest version of python include the pip command
+latest version of python includes the pip command
 
 but if pip is giving you trouble execute in the terminal
 
@@ -39,17 +39,17 @@ Install the `goprohero` library:
 pip3 install goprohero
 ```
 
-➜turn GoPro On
+> ➜turn GoPro On
 
-➜turn the wifi on on your camera
+> ➜turn on the wifi on your GoPro
 
-➜join the camera network
+> ➜join the camera network
 
 in the python shell
 
 ```python
 from goprohero import GoProHero
-camera = GoProHero(password='password')
+camera = GoProHero(password='yourpassword')
 camera.command('record', 'on')
 camera.command('record', 'off')
 ```
@@ -65,7 +65,7 @@ Parameter | Values
 power | `sleep`, `on`
 record | `off`, `on`
 
-Check out the [API](https://github.com/joshvillbrandt/goprohero/blob/master/docs/API.md) for the complete command list.
+Check out the [API](https://github.com/joshvillbrandt/goprohero/blob/master/docs/API.md) for the complete command list with more set up options.
 
 
   
@@ -93,7 +93,7 @@ in the `birdcam.py` file
 change password to your password
 
 ```python
-camera = GoProHero(password='password')
+camera = GoProHero(password='yourpassword')
 ```
 decide **when** you want your camera to turn on and record.
 
@@ -102,7 +102,7 @@ the current version is set to turn on at 05:30 and record for 2 hours
 schedule.every().day.at("05:30").do(job)
 ```
 
-other possible schedule options:
+other possible `schedule` options:
 ```python
 schedule.every(10).minutes.do(job)
 schedule.every().hour.do(job)
@@ -116,11 +116,11 @@ schedule.every().minute.at(":17").do(job)
 finally choose for **how long** you would like to record :
 
 
-- [hours to seconds converter](https://www.calculateme.com/time/hours/to-seconds/)
+> - [hours to seconds converter](https://www.calculateme.com/time/hours/to-seconds/)
 
-- [morning civil twilight calculator](https://www.suntoday.org/sunrise-sunset/tomorrow.html)
+> - [morning civil twilight calculator](https://www.suntoday.org/sunrise-sunset/tomorrow.html)
 
-*birbs feed early in the morning*
+> *birbs feed early in the morning*
 
 
 ```python
@@ -129,7 +129,7 @@ time.sleep(time you want to record in seconds)
 camera.command('record', 'off')
 ```   
 
-save everything!
+**save everything!**
 
 in the terminal
 
@@ -138,7 +138,7 @@ cd to ~/your/path/birbs
 python3 birdcam.py
 ```
 
-When running `birdcam.py` came sure you have turned on the wifi on on your camera and joined the camera network
+When running `birdcam.py` make sure you have turned on the wifi on your camera and joined the camera network.
 
 
 
@@ -147,7 +147,7 @@ When running `birdcam.py` came sure you have turned on the wifi on on your camer
 
 
 ##### HARDWARE NOTES
-the laptop needs to be on and connected to the gopro network in order to execute the steps.
+the device running `birdcam.py` needs to be on and connected to the GoPro camera network in order to execute the steps.
 GoPro Hero 3+ (black edition) needs to be plugged in to electric power to last .That means that the bacpac is fitted (the internal battery can't be removed and still have the gopro operational) the charging cable needs to be 5V,1A (be aware most charging cables are 2A)
 it overheats.
 
