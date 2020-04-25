@@ -1,21 +1,21 @@
-##### birbs
+## birbs
 a collection of python scripts used in automating the process of recording and offloading material from a GoPro Hero 3+ Black that I use to observe my birdfeeder.
 
-##### SET UP
-GoPro Hero 3+ Black
-GoPro Original Battery
-GoPro Battery BacPac
-GoPro Charging Cable
-[Transparent Bird House](https://www.amazon.com/iFCOW-Transparent-Acrylic-Absorption-Installation/dp/B084L14RCT/ref=sr_1_29?dchild=1&keywords=acrylic+bird+feeders&qid=1587835858&sr=8-29)
-[Vogelbescgerming Bird Feed](https://www.vogelbeschermingshop.nl/4-seizoenenstrooivoer-met-meelwormen-25-kg)
+## SET UP
+⋅⋅⋅ GoPro Hero 3+ Black
+⋅⋅⋅ GoPro Original Battery
+⋅⋅⋅ GoPro Battery BacPac
+⋅⋅⋅ GoPro Charging Cable
+⋅⋅⋅ [Transparent Bird House](https://www.amazon.com/iFCOW-Transparent-Acrylic-Absorption-Installation/dp/B084L14RCT/ref=sr_1_29?dchild=1&keywords=acrylic+bird+feeders&qid=1587835858&sr=8-29)
+⋅⋅⋅ [Vogelbescgerming Bird Feed](https://www.vogelbeschermingshop.nl/4-seizoenenstrooivoer-met-meelwormen-25-kg)
 32GB Micro SD Card
 
 *hopefully in the future it will also include*
-Suction Cup & GorillaPod Arm
-GoPro Skeleton Case
+⋅⋅⋅ Suction Cup & GorillaPod Arm
+⋅⋅⋅ GoPro Skeleton Case
 
 
-##### SOFTWARE
+## SOFTWARE
 [install latest version of python](https://www.python.org/downloads/)
 
 python latest version come with pip hooray!
@@ -25,12 +25,13 @@ if pip is giving you hustell
 pip3 install --upgrade pip
 ```
 
-Then this set builds upong [Goprohero](https://github.com/joshvillbrandt/goprohero) a library and a command line interface that can interface with GoPro HERO3, HERO3+, and HERO4 cameras over http.. Following the instructions of Goprohero:
+Then this set builds upong [Goprohero](https://github.com/joshvillbrandt/goprohero) a library and a command line interface that can interface with GoPro HERO3, HERO3+, and HERO4 cameras over http.
+Following the instructions of Goprohero:
 
 Install the `goprohero` library:
 
 ```bash
-sudo pip install goprohero
+pip3 install goprohero
 ```
 turn the wifi on on your camera
 join the camera network
@@ -44,7 +45,8 @@ camera.command('record', 'off')
 ```
 
 woohoo! you have just have recorded your birbs remotely!
-for more commands check out Check out the [API](https://github.com/joshvillbrandt/goprohero/blob/master/docs/API.md) for the complete command list.
+
+Check out the [API](https://github.com/joshvillbrandt/goprohero/blob/master/docs/API.md) for the complete command list.
 
 most often commands used :
 
@@ -53,8 +55,7 @@ Parameter | Values
 power | `sleep`, `on`
 record | `off`, `on`
   
-##### MAKE THIS INTO A PROGRAM THAT HAPPENS EVERY MORNING
-##### BECAUSE BIRBS WAKE UP BEFORE YOU
+#### MAKE THIS INTO A PROGRAM THAT HAPPENS EVERY MORNING BECAUSE BIRBS WAKE UP BEFORE YOU
 
 ```bash
 pip3 install --upgrade pip
@@ -93,9 +94,9 @@ schedule.every().minute.at(":17").do(job)
 ```
 
 to choose for how long you would like to record edit :
-[hours to seconds converter](https:(//www.calculateme.com/time/hours/to-seconds/)
-[morning civil twilight calculator](https://www.suntoday.org/sunrise-sunset/tomorrow.html)
-*birbs feed early in the morning*
+⋅⋅⋅[hours to seconds converter](https:(//www.calculateme.com/time/hours/to-seconds/)
+⋅⋅⋅[morning civil twilight calculator](https://www.suntoday.org/sunrise-sunset/tomorrow.html)
+⋅⋅⋅ *birbs feed early in the morning*
 
 ```python
     camera.command('record', 'on')
@@ -122,8 +123,8 @@ it overheats.
 At `1080p` 2 hours are something less that `32GB`
 
 ###### NEXT STEPS
-1.Get the program on a rasberry pi so it can run uninterrupted and won't require the laptop to stay on
-2.Offload the files remotely, so you don't to remove the camera to access the SD
-3.Monitor the heatup of the GoPro (when recording in shadow, when recording in heat, when asleep in the sun)
-4.Explore ways of powering the GoPro without the internal battery.
-5.Look into setuping a livestream
+1. Get the program on a rasberry pi so it can run uninterrupted and won't require the laptop to stay on
+2. Offload the files remotely, so you don't to remove the camera to access the SD
+3. Monitor the heatup of the GoPro (when recording in shadow, when recording in heat, when asleep in the sun)
+4. Explore ways of powering the GoPro without the internal battery.
+5. Look into setuping a livestream
