@@ -16,6 +16,10 @@ a collection of python libaries, scripts and notes used in automating the proces
 
 
 ## SOFTWARE
+
+#### REMOTE CONTROL OF THE GOPRO
+*avoid having to press buttons*
+
 [install latest version of python](https://www.python.org/downloads/)
 
 latest version of python include the pip command
@@ -34,6 +38,9 @@ Install the `goprohero` library:
 ```bash
 pip3 install goprohero
 ```
+
+turn GoPro On
+
 turn the wifi on on your camera
 
 join the camera network
@@ -49,7 +56,7 @@ camera.command('record', 'off')
 
 ###### **❐ WOOHOO CHECKPOINT ❐** YOU HAVE JUST RECORDED YOUR BIRBS REMOTELY
 
-Check out the [API](https://github.com/joshvillbrandt/goprohero/blob/master/docs/API.md) for the complete command list.
+
 
 most used commands :
 
@@ -58,8 +65,13 @@ Parameter | Values
 power | `sleep`, `on`
 record | `off`, `on`
 
+Check out the [API](https://github.com/joshvillbrandt/goprohero/blob/master/docs/API.md) for the complete command list.
+
+
   
-#### MAKE THIS INTO A PROGRAM THAT HAPPENS EVERY MORNING BECAUSE BIRBS WAKE UP BEFORE YOU
+#### AUTOMATE TURN ON & RECORD
+*Make this into a program that happens every morning because the birbs wake up before you*
+
 
 This part uses [shedule](https://pypi.org/project/schedule/).An in-process scheduler for periodic jobs that uses the builder pattern for configuration.
 
@@ -126,6 +138,8 @@ python3 birdcam.py
 ```
 
 When running `birdcam.py` came sure you have turned on the wifi on on your camera and joined the camera network
+
+
 
 ###### **❐ WOOHOO CHECKPOINT ❐** YOU CAN NOW SEE THE BIRBS YOU MISSED WHEN YOU WERE ASLEEP
 
