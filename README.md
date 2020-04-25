@@ -18,7 +18,7 @@ a collection of python libaries, scripts and notes used in automating the proces
 ## SOFTWARE
 
 #### REMOTE CONTROL OF THE GOPRO
-*avoid having to press buttons*
+`*avoid having to press buttons*`
 
 [install latest version of python](https://www.python.org/downloads/)
 
@@ -70,7 +70,7 @@ Check out the [API](https://github.com/joshvillbrandt/goprohero/blob/master/docs
 
   
 #### AUTOMATE TURN ON & RECORD
-*Make this into a program that happens every morning because the birbs wake up before you*
+`*Make this into a program that happens every morning because the birbs wake up before you*`
 
 
 This part uses [shedule](https://pypi.org/project/schedule/).An in-process scheduler for periodic jobs that uses the builder pattern for configuration.
