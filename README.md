@@ -100,18 +100,21 @@ schedule.every().wednesday.at("13:15").do(job)
 schedule.every().minute.at(":17").do(job)
 ```
 
-finally choose for how long you would like to record :
+finally choose for **how long** you would like to record :
 
-[hours to seconds converter](https:(//www.calculateme.com/time/hours/to-seconds/)
 
-[morning civil twilight calculator](https://www.suntoday.org/sunrise-sunset/tomorrow.html)
+-[hours to seconds converter](https://www.calculateme.com/time/hours/to-seconds/)
+
+-[morning civil twilight calculator](https://www.suntoday.org/sunrise-sunset/tomorrow.html)
 
 *birbs feed early in the morning*
 
+
 ```python
-    camera.command('record', 'on')
-    time.sleep(time you want to record in seconds)
-    camera.command('record', 'off') ```   
+camera.command('record', 'on')
+time.sleep(time you want to record in seconds)
+camera.command('record', 'off')
+```   
 
 save everything!
 
