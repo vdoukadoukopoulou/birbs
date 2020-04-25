@@ -1,4 +1,4 @@
-## birbs
+## BIRBS
 a collection of python libaries, scripts and notes used in automating the process of documenting my birdfeeder using a GoPro Hero 3+ Black.
 
 ## SET UP
