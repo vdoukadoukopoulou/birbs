@@ -86,12 +86,13 @@ open .
 ```
 
 in the `birdcam.py` file 
+
 change password to your password 
 
 
 If you know what and [.env](https://pypi.org/project/python-dotenv/) file is | If you don't know what it is
 --- |:---
-create a .env file with `KEY='your_password_of_choice'` | fill in your GoPro password where indicated bellow makes sure it looks like this `camera = GoProHero(password='your_password_of_choice')`
+create a .env file with `KEY='your_password_of_choice'` | fill in your GoPro password in `=your_password` where it is indicated bellow make sure it looks like this `camera = GoProHero(password='your_password_of_choice')` including the`*`*`
 
 ```python
 camera = GoProHero(password=your_password)
