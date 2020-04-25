@@ -47,7 +47,7 @@ camera.command('record', 'on')
 camera.command('record', 'off')
 ```
 
-###### **❐woohoo checkpoint❐** YOU HAVE JUST RECORDED YOUR BIRBS REMOTELY
+###### **❐ WOOHOO CHECKPOINT ❐** YOU HAVE JUST RECORDED YOUR BIRBS REMOTELY
 
 Check out the [API](https://github.com/joshvillbrandt/goprohero/blob/master/docs/API.md) for the complete command list.
 
@@ -57,11 +57,16 @@ Parameter | Values
 --- |:---
 power | `sleep`, `on`
 record | `off`, `on`
+
   
 #### MAKE THIS INTO A PROGRAM THAT HAPPENS EVERY MORNING BECAUSE BIRBS WAKE UP BEFORE YOU
 
+This part uses [shedule](https://pypi.org/project/schedule/).An in-process scheduler for periodic jobs that uses the builder pattern for configuration.
+
+
+
 ```bash
-pip3 install --upgrade pip
+pip3 install schedule
 ```
 then
 
@@ -72,13 +77,12 @@ open .
 ```
 
 open `birdcam.py` file 
-change the password to your password
+change password to your password
 
 ```python
 camera = GoProHero(password='password')
 ```
 then choose when you want your camera to turn on and record.
-this uses [shedule](https://pypi.org/project/schedule/)
 
 the current version is set to turn on at 05:30 and record for 2 hours
 ```python
@@ -114,7 +118,9 @@ in the terminal
 cd to ~/your/path/birbs
 python3 birdcam.py
 ```
-###### **❐woohoo checkpoint❐** YOU CAN NOW SEE THE BIRBS YOU MISSED WHEN YOU WERE ASLEEP
+When running `birdcam.py` came sure you have turned on the wifi on on your camera and joined the camera network
+
+###### **❐ WOOHOO CHECKPOINT ❐** YOU CAN NOW SEE THE BIRBS YOU MISSED WHEN YOU WERE ASLEEP
 
 
 
