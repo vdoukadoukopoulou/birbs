@@ -47,7 +47,7 @@ camera.command('record', 'on')
 camera.command('record', 'off')
 ```
 
-######**❐woohoo checkpoint❐** YOU HAVE JUST RECORDED YOUR BIRBS REMOTELY
+###### **❐woohoo checkpoint❐** YOU HAVE JUST RECORDED YOUR BIRBS REMOTELY
 
 Check out the [API](https://github.com/joshvillbrandt/goprohero/blob/master/docs/API.md) for the complete command list.
 
@@ -114,7 +114,7 @@ in the terminal
 cd to ~/your/path/birbs
 python3 birdcam.py
 ```
-######**❐woohoo checkpoint❐** YOU CAN NOW SEE THE BIRBS YOU MISSED WHEN YOU WERE ASLEEP
+###### **❐woohoo checkpoint❐** YOU CAN NOW SEE THE BIRBS YOU MISSED WHEN YOU WERE ASLEEP
 
 
 
