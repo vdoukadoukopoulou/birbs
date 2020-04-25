@@ -8,7 +8,7 @@ a collection of python libaries, scripts and notes used in automating the proces
 - GoPro Charging Cable
 - [Transparent Bird House](https://www.amazon.com/iFCOW-Transparent-Acrylic-Absorption-Installation/dp/B084L14RCT/ref=sr_1_29?dchild=1&keywords=acrylic+bird+feeders&qid=1587835858&sr=8-29)
 - [Vogelbescgerming Bird Feed](https://www.vogelbeschermingshop.nl/4-seizoenenstrooivoer-met-meelwormen-25-kg)
-32GB Micro SD Card
+- 32GB Micro SD Card
 
 *hopefully in the future it will also include*
 - Suction Cup & GorillaPod Arm
@@ -116,9 +116,9 @@ schedule.every().minute.at(":17").do(job)
 finally choose for **how long** you would like to record :
 
 
--[hours to seconds converter](https://www.calculateme.com/time/hours/to-seconds/)
+- [hours to seconds converter](https://www.calculateme.com/time/hours/to-seconds/)
 
--[morning civil twilight calculator](https://www.suntoday.org/sunrise-sunset/tomorrow.html)
+- [morning civil twilight calculator](https://www.suntoday.org/sunrise-sunset/tomorrow.html)
 
 *birbs feed early in the morning*
 
