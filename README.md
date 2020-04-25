@@ -39,11 +39,11 @@ Install the `goprohero` library:
 pip3 install goprohero
 ```
 
-turn GoPro On
+➜turn GoPro On
 
-turn the wifi on on your camera
+➜turn the wifi on on your camera
 
-join the camera network
+➜join the camera network
 
 in the python shell
 
