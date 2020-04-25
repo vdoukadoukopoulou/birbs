@@ -39,11 +39,9 @@ Install the `goprohero` library:
 pip3 install goprohero
 ```
 
-> ➜turn GoPro On
-
-> ➜turn on the wifi on your GoPro
-
-> ➜join the camera network
+> ➜ turn GoPro On
+> ➜ turn on the wifi on your GoPro
+> ➜ join the camera network
 
 in the python shell
 
@@ -117,9 +115,7 @@ finally choose for **how long** you would like to record :
 
 
 > - [hours to seconds converter](https://www.calculateme.com/time/hours/to-seconds/)
-
 > - [morning civil twilight calculator](https://www.suntoday.org/sunrise-sunset/tomorrow.html)
-
 > *birbs feed early in the morning*
 
 
