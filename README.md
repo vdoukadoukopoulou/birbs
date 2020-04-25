@@ -20,6 +20,7 @@ a collection of python libaries, scripts and notes used in automating the proces
 #### REMOTE CONTROL OF THE GOPRO 
 `avoid having to press buttons`
 
+No need to `cd` into a folder
 
 [install latest version of python](https://www.python.org/downloads/)
 
@@ -85,11 +86,17 @@ open .
 ```
 
 in the `birdcam.py` file 
-change password to your password
+change password to your password 
+
+
+If you know what and [.env](https://pypi.org/project/python-dotenv/) file is | If you don't know what it is
+--- |:---
+create a .env file with `KEY='your_password_of_choice'` | fill in your GoPro password where indicated bellow makes sure it looks like this `camera = GoProHero(password='your_password_of_choice')`
 
 ```python
-camera = GoProHero(password='yourpassword')
+camera = GoProHero(password=your_password)
 ```
+
 decide **when** you want your camera to turn on and record.
 
 the current version is set to turn on at 05:30 and record for 2 hours
