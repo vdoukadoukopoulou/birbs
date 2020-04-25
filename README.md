@@ -156,6 +156,6 @@ At `1080p` 2 hours are something less that `32GB`
 ##### NEXT STEPS
 1. Get the program on a rasberry pi so it can run uninterrupted and won't require the laptop to stay on
 2. Offload the files remotely, so you don't to remove the camera to access the SD
-3. Monitor the heatup of the GoPro (when recording in shadow, when recording in heat, when asleep in the sun)
+3. Monitor the heatup of the GoPro (when recording in shadow, when recording in heat, when asleep in the sun etc.)
 4. Explore ways of powering the GoPro without the internal battery.
 5. Look into setuping a livestream
